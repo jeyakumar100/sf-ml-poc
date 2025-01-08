@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: ods
+    database: rdw_prod
+    schema: ods
+    tables:
+      - name: rentals
+        description: table from ods schema
