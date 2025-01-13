@@ -7,3 +7,6 @@ sources:
     tables:
       - name: rentals
         description: table from ods schema
+      - name: properties
+      - name: rental_units
+      - name: rental_unit_types
