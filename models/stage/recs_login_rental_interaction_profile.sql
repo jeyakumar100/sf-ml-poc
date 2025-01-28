@@ -82,8 +82,8 @@ select
                     ,try_cast(regexp_substr(uri, 'propertyId=([^&]+)', 1, 1, 'e', 1) as bigint)  as mobile_property_id
                     ,try_cast(split_part(regexp_substr(uri,'(/home/)([0-9]+)'),'/',-1) as bigint) as web_property_id
                     ,try_cast(split_part(regexp_substr(uri,'(/apartment/)([0-9]+)'),'/',-1) as bigint) as web_apartment_property_id
-                    from rdw_prod.timeseries.weblogs_202501_01
-                    where day = '2025-01-01'
+                    from rdw_prod.timeseries.weblogs_202501_02
+                    where day = '2025-01-25'
                     and (uri not like '%.ashx%')  
                         and (uri not like '%.js%')  
                         and (uri not like '%.css%')

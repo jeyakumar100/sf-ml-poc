@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: rf_temp
+    database: rdw_prod
+    schema: rf_temp
+    tables:
+      - name: recs_rentals_events
+      - name: recs_listing_cluster_matches
+      - name: recs_listing_clusters_pilr_v2
+      - name: recs_cluster_to_cluster_matches
